@@ -41,6 +41,7 @@ const FetchExcelData = () => {
               onChange={(e) => readExcel(e)}
             />
           </div>
+          <button onClick={onDownload}>Export Data</button>
           <div className="col-md-12 mt-3">
             <table className="table" ref={tableRef}>
               <thead>
@@ -62,7 +63,6 @@ const FetchExcelData = () => {
                 ))}
               </tbody>
             </table>
-            <button onClick={onDownload}>Export Data</button>
           </div>
         </div>
       </Container>
